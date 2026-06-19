@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo               # The internal dbt alias for this source
+    database: demo              # Physical database name in your warehouse
+    schema: demo_schema 
+    tables:
+    - name: bike
+      
+    - name: weather
