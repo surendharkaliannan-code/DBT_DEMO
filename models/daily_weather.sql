@@ -33,7 +33,7 @@ group by daily_weather, weather
 qualify ROW_NUMBER() OVER (PARTITION BY daily_weather ORDER BY count(weather) desc) =1
 
 )
-
+ 
 
 
 select
